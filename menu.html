@@ -4,99 +4,174 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu | Spring Coffee</title>
+  <meta name="description" content="Explore the Spring Coffee menu featuring espresso, milk-based favorites, and refreshing iced drinks.">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-... " crossorigin="anonymous" referrerpolicy="no-referrer" />   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body class="glass">
-<main>
-<header>
-     <nav>
-            <div class="brand">
-               <span class="mug-icon"><i class="fa-solid fa-mug-hot"></i></span>
-               <h2 class="logo">Spring Coffee</h2>
-            </div>
-
-                
-            <div class="menu-toggle" id="menuToggle">☰</div>
-
-
-             <ul id="navMenu">
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="menu.html">Menu</a></li>
-                 <li><a href="order.html">Order</a></li>
-                 <li><a href="about.html">About Us</a></li>
-                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+<body class="menu-page">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="brand" href="index.html">
+            <span class="mug-icon"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></span>
+            <span>
+              <span class="logo">Spring Coffee</span>
+              <span class="logo-tag">Slow mornings, bold brews</span>
+            </span>
+          </a>
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" data-page="index">Home</a></li>
+            <li><a href="menu.html" data-page="menu">Menu</a></li>
+            <li><a href="order.html" data-page="order">Order</a></li>
+            <li><a href="about.html" data-page="about">About</a></li>
+            <li><a href="contact.html" data-page="contact">Contact</a></li>
+          </ul>
         </nav>
-</header>
+      </div>
+    </header>
 
-<section class="page menu-page">
-  <h1>Our Menu</h1>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="eyebrow">Menu</span>
+            <h1>Signature drinks made to be easy to scan and hard to resist.</h1>
+            <p class="lead">A curated range of rich espresso, velvety milk drinks, and refreshing iced favorites, each presented with clean descriptions and premium imagery.</p>
+          </div>
 
-  <div class="menu-grid">
-    <div class="card expresso">
-      <h3>Espresso</h3>
-      <p>Strong & bold</p>
-      <span>$3</span>
-    </div>
+          <div class="menu-grid">
+            <article class="menu-card reveal">
+              <div class="menu-card-image"><img src="images/expresso.jpg" alt="Espresso served in a small cup"></div>
+              <div class="menu-card-body">
+                <div class="menu-meta">
+                  <h3>Espresso</h3>
+                  <span class="menu-price">$3.00</span>
+                </div>
+                <p>Strong, concentrated, and intentionally bold with a clean finish.</p>
+                <p class="menu-note">Best for: pure coffee lovers and quick morning resets.</p>
+              </div>
+            </article>
 
-    <div class="card cappuccino">
-      <h3>Cappuccino</h3>
-      <p>Rich & creamy</p>
-      <span>$4</span>
-    </div>
+            <article class="menu-card reveal">
+              <div class="menu-card-image"><img src="images/capuccino.jpg" alt="A creamy cappuccino with foamed milk"></div>
+              <div class="menu-card-body">
+                <div class="menu-meta">
+                  <h3>Cappuccino</h3>
+                  <span class="menu-price">$4.00</span>
+                </div>
+                <p>Rich espresso layered with airy foam for a balanced, creamy texture.</p>
+                <p class="menu-note">Best for: guests who want depth with a lighter finish.</p>
+              </div>
+            </article>
 
-    <div class="card latte">
-      <h3>Latte</h3>
-      <p>Smooth milk blend</p>
-      <span>$4.5</span>
-    </div>
+            <article class="menu-card reveal">
+              <div class="menu-card-image"><img src="images/latte.jpg" alt="A smooth latte in a ceramic cup"></div>
+              <div class="menu-card-body">
+                <div class="menu-meta">
+                  <h3>Latte</h3>
+                  <span class="menu-price">$4.50</span>
+                </div>
+                <p>Smooth milk and espresso with a softer profile and comforting finish.</p>
+                <p class="menu-note">Best for: slow mornings and easy everyday sipping.</p>
+              </div>
+            </article>
 
-    <!--New Items-->
-    <div class="card americano">
-      <h3>Americano</h3>
-      <p>Espresso & hot water</p>
-      <span>$3.5</span>
-    </div>
+            <article class="menu-card reveal">
+              <div class="menu-card-image"><img src="images/americano.jpg" alt="Americano in a warm ceramic mug"></div>
+              <div class="menu-card-body">
+                <div class="menu-meta">
+                  <h3>Americano</h3>
+                  <span class="menu-price">$3.50</span>
+                </div>
+                <p>Espresso extended with hot water for a lighter body and long finish.</p>
+                <p class="menu-note">Best for: a clean black coffee profile with more volume.</p>
+              </div>
+            </article>
 
-    <div class="card mocha">
-      <h3>Mocha</h3>
-      <p>Chocolate delight</p>
-      <span>$5</span>
-    </div>
+            <article class="menu-card reveal">
+              <div class="menu-card-image"><img src="images/mocha.jpg" alt="Mocha topped with chocolate and foam"></div>
+              <div class="menu-card-body">
+                <div class="menu-meta">
+                  <h3>Mocha</h3>
+                  <span class="menu-price">$5.00</span>
+                </div>
+                <p>Chocolate, espresso, and milk blended into a dessert-like coffee classic.</p>
+                <p class="menu-note">Best for: guests who want indulgence without losing the coffee note.</p>
+              </div>
+            </article>
 
+            <article class="menu-card reveal">
+              <div class="menu-card-image"><img src="images/flatwhite.jpg" alt="Flat white with fine microfoam"></div>
+              <div class="menu-card-body">
+                <div class="menu-meta">
+                  <h3>Flat White</h3>
+                  <span class="menu-price">$4.50</span>
+                </div>
+                <p>Velvety microfoam and espresso with a more intense coffee-to-milk ratio.</p>
+                <p class="menu-note">Best for: a premium, textured cup with stronger character.</p>
+              </div>
+            </article>
 
-    <div class="card flatwhite">
-      <h3>Flat White</h3>
-      <p>Velvety texture</p>
-      <span>$4.5</span>
+            <article class="menu-card reveal">
+              <div class="menu-card-image"><img src="images/macchiato.jpg" alt="Macchiato with a light cap of foam"></div>
+              <div class="menu-card-body">
+                <div class="menu-meta">
+                  <h3>Macchiato</h3>
+                  <span class="menu-price">$3.50</span>
+                </div>
+                <p>Espresso marked with foam for a compact drink that still feels refined.</p>
+                <p class="menu-note">Best for: those who want bold flavor with just a touch of softness.</p>
+              </div>
+            </article>
+
+            <article class="menu-card reveal">
+              <div class="menu-card-image"><img src="images/frappuccino.jpg" alt="A blended frappuccino topped with cream"></div>
+              <div class="menu-card-body">
+                <div class="menu-meta">
+                  <h3>Frappuccino</h3>
+                  <span class="menu-price">$5.00</span>
+                </div>
+                <p>Blended, chilled, and lightly sweet for a playful coffee break moment.</p>
+                <p class="menu-note">Best for: hot afternoons and dessert-inspired cravings.</p>
+              </div>
+            </article>
+
+            <article class="menu-card reveal">
+              <div class="menu-card-image"><img src="images/cold.jpg" alt="Cold brew served over ice"></div>
+              <div class="menu-card-body">
+                <div class="menu-meta">
+                  <h3>Cold Brew</h3>
+                  <span class="menu-price">$4.00</span>
+                </div>
+                <p>Slow-steeped, smooth, and refreshing with low bitterness and clean body.</p>
+                <p class="menu-note">Best for: crisp, chilled coffee with a mellow finish.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="cta-strip reveal">
+            <div>
+              <h3>Found your favorite?</h3>
+              <p>Move straight from browsing to ordering with a clear next step.</p>
+            </div>
+            <a href="order.html" class="btn-secondary">Order Your Drink</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Spring Coffee</p>
+        <p>Premium coffee, photographed and presented with clarity.</p>
+      </div>
+    </footer>
   </div>
 
-    <div class="card macchiato">
-      <h3>Macchiato</h3>
-      <p>Espresso with foam</p>
-      <span>$3.5</span>
-    </div>
-
-    <div class="card frappuccino">
-      <h3>Frappuccino</h3>
-      <p>Blended iced treat</p>
-      <span>$5</span>
-    </div>
-
-    <div class="card coldbrew">
-      <h3>Cold Brew</h3>
-      <p>Smooth & refreshing</p>
-      <span>$4</span>
-    </div>
-  <!--End New Items-->
-
-</section>
-</main>
-
-<footer>
-  <p style="color : #fff">© 2025 Spring Coffee | Designed by Jerry</p>
-</footer>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

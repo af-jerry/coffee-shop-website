@@ -4,57 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Spring Coffee</title>
+  <meta name="description" content="Learn the story behind Spring Coffee, from sourcing philosophy to the craft behind every cup.">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-... " crossorigin="anonymous" referrerpolicy="no-referrer" />   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body>
-<main>
-<header>
-     <nav>
-            <div class="brand">
-               <span class="mug-icon"><i class="fa-solid fa-mug-hot"></i></span>
-               <h2 class="logo">Spring Coffee</h2>
-            </div>
-
-                
-            <div class="menu-toggle" id="menuToggle">☰</div>
-
-
-             <ul id="navMenu">
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="menu.html">Menu</a></li>
-                 <li><a href="order.html">Order</a></li>
-                 <li><a href="about.html">About Us</a></li>
-                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+<body class="about-page">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="brand" href="index.html">
+            <span class="mug-icon"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></span>
+            <span>
+              <span class="logo">Spring Coffee</span>
+              <span class="logo-tag">Slow mornings, bold brews</span>
+            </span>
+          </a>
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" data-page="index">Home</a></li>
+            <li><a href="menu.html" data-page="menu">Menu</a></li>
+            <li><a href="order.html" data-page="order">Order</a></li>
+            <li><a href="about.html" data-page="about">About</a></li>
+            <li><a href="contact.html" data-page="contact">Contact</a></li>
+          </ul>
         </nav>
-</header>
+      </div>
+    </header>
 
-<section class="page about-page">
-  <h1>About Us</h1>
-    <div class="card-about">
-        <h2 class="about-heading">Our Story</h2>
-       <p style="color: #fff">
-          For us, coffee is more than a daily ritual, it is a precise craft. At Spring, we believe that the journey from the soil to the cup is a delicate one, and our mission is to ensure nothing is lost along the way.
-       </p>
-    </div>
-    <div class="card-about">      
-           <h2 class="about-heading">Precision in Every Drop</h2>    
-          <p style="color:#fff">We don't believe in "good enough." Our baristas dial in our grinders every morning, adjusting for humidity and temperature to ensure the perfect extraction. We utilize  Slayer and  Pour-over bars to maintain rigorous consistency, ensuring that whether it’s a flat white or a complex origin flight, the profile is exactly as the roaster intended.
-        </p>
-    </div>
-    <div class="card-about">    
-           <h2 class="about-heading">Sourcing Philosophy</h2>
-              <p style="color:#fff">Quality begins at the origin.
-                  We source our beans directly from small farms and cooperatives, ensuring fair trade practices and supporting local communities. Quality begins at the origin. We partner exclusively with the best beans producers to source seasonal, high-altitude beans.
-              </p>
-    </div>
-</section>
-</main> 
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="eyebrow">About Spring</span>
+            <h1>A concise story rooted in craft, care, and everyday ritual.</h1>
+            <p class="lead">Coffee is more than a routine for us. It is a precise craft shaped by sourcing, thoughtful roasting, and careful preparation from the first grind to the final pour.</p>
+          </div>
 
-<footer>
-  <p>© 2025 Spring Coffee | Designed by Jerry</p>
-</footer>
-<script src="script.js"></script>
+          <div class="split-panel">
+            <div class="about-visual reveal">
+              <img src="images/macchito1.jpg" alt="Barista pouring a carefully made coffee drink">
+            </div>
+            <div class="about-copy reveal">
+              <span class="eyebrow">Our Story</span>
+              <h2>Built for people who notice the details in every cup.</h2>
+              <p class="lead">At Spring Coffee, we believe the journey from farm to cup deserves attention at every step. We partner with quality-focused producers, dial in our espresso daily, and create a space that feels personal, warm, and quietly premium.</p>
+            </div>
+          </div>
+
+          <div class="story-grid">
+            <article class="story-card reveal">
+              <h3>Precision in Every Drop</h3>
+              <p>Our baristas calibrate grind size, extraction, and milk texture each morning so every espresso-based drink lands with clarity and consistency.</p>
+              <p>Whether it is a flat white or a carefully layered cappuccino, the goal stays the same: preserve the bean's intended profile without unnecessary noise.</p>
+            </article>
+
+            <article class="story-card reveal">
+              <h3>Sourcing with Intention</h3>
+              <p>Quality begins at origin. We source from trusted farms and cooperatives that value better cultivation, fairer relationships, and seasonal excellence.</p>
+              <p>That means a stronger cup for our guests and more meaningful support for the communities behind every bag of beans.</p>
+            </article>
+          </div>
+
+          <div class="cta-strip reveal">
+            <div>
+              <h3>Experience the story in person.</h3>
+              <p>See how the atmosphere, service, and coffee all work together in the space itself.</p>
+            </div>
+            <a href="contact.html" class="btn-secondary">Visit the Cafe</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Spring Coffee</p>
+        <p>Storytelling kept concise, warm, and authentic.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

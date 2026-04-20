@@ -4,58 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Order | Spring Coffee</title>
+  <meta name="description" content="Order Spring Coffee online, arrange pickup, or request delivery through your preferred channel.">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-... " crossorigin="anonymous" referrerpolicy="no-referrer" />   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body>
-<main>
-<header>
-     <nav>
-            <div class="brand">
-               <span class="mug-icon"><i class="fa-solid fa-mug-hot"></i></span>
-               <h2 class="logo">Spring Coffee</h2>
-            </div>
-
-                
-            <div class="menu-toggle" id="menuToggle">☰</div>
-
-
-             <ul id="navMenu">
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="menu.html">Menu</a></li>
-                 <li><a href="order.html">Order</a></li>
-                 <li><a href="about.html">About Us</a></li>
-                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+<body class="order-page">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="brand" href="index.html">
+            <span class="mug-icon"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></span>
+            <span>
+              <span class="logo">Spring Coffee</span>
+              <span class="logo-tag">Slow mornings, bold brews</span>
+            </span>
+          </a>
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" data-page="index">Home</a></li>
+            <li><a href="menu.html" data-page="menu">Menu</a></li>
+            <li><a href="order.html" data-page="order">Order</a></li>
+            <li><a href="about.html" data-page="about">About</a></li>
+            <li><a href="contact.html" data-page="contact">Contact</a></li>
+          </ul>
         </nav>
-</header>
+      </div>
+    </header>
 
-<section class="page order-page">
-  <h1>Place an Order</h1>
-    <div class="card-order">
-      <h2 class="order-heading">Online Ordering</h2>
-        <p class="order-text">
-        You can place your order online through our website. Choose your cup of coffee and customize them to your liking.
-      </p>
-    
-       <h2 class="order-heading">In-Store Pickup</h2>
-           <p>Visit our store to pick up your order at your convenience.</p>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="eyebrow">Order</span>
+            <h1>Simple ordering flow, clearer options, and stronger calls to action.</h1>
+            <p class="lead">The ordering page focuses on speed and clarity so customers understand how to get their drink with as little friction as possible.</p>
+          </div>
 
-       <h2 class="order-heading">Delivery Options</h2>
+          <div class="order-grid">
+            <article class="order-card reveal">
+              <div class="order-steps">
+                <span class="step-pill">1</span>
+                <span>Choose your drink</span>
+              </div>
+              <h3>Browse the menu with confidence</h3>
+              <p>Explore espresso classics, milk-based favorites, and refreshing cold options with clean descriptions and an intentional card layout.</p>
+              <div class="hero-actions">
+                <a href="menu.html" class="btn-secondary">View Menu</a>
+              </div>
+            </article>
 
-          <p>We offer delivery through popular services like Yango and Bolt.</p>
+            <article class="order-card reveal">
+              <div class="order-steps">
+                <span class="step-pill">2</span>
+                <span>Pick your fulfillment</span>
+              </div>
+              <h3>Online, pickup, or delivery</h3>
+              <p>Place orders online, collect in store at your convenience, or request delivery through services like Yango and Bolt where available.</p>
+            </article>
 
-       <h2 class="order-heading">WhatsApp Orders</h2>
+            <article class="order-card reveal">
+              <div class="order-steps">
+                <span class="step-pill">3</span>
+                <span>Message directly</span>
+              </div>
+              <h3>Fast-track your order on WhatsApp</h3>
+              <p>Use a direct WhatsApp CTA for quick questions, custom requests, and a smoother mobile-first ordering experience.</p>
+              <div class="hero-actions">
+                <a href="https://wa.me/233277765157?text=Hello%20Spring%20Coffee%2C%20I%20would%20like%20to%20place%20an%20order." class="btn">Order on WhatsApp</a>
+              </div>
+            </article>
 
-          <p>Order via WhatsApp for quicker response</p>
-       <a href="https://wa.me/233277765157?text=Hello%20Spring%20Coffee%2C%20I%20would%20like%20to%20place%20an%20order." class="btn">Order on WhatsApp</a>
-    </div>
-</section>
-</main>
+            <article class="order-card reveal">
+              <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+              <h3>Conversion-focused by design</h3>
+              <p>Prominent buttons, balanced spacing, and a simpler message hierarchy help visitors act quickly without feeling rushed or overwhelmed.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<footer>
-  <p>© 2025 Spring Coffee | Designed by Jerry</p>
-</footer>
-<script src="script.js"></script>
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Spring Coffee</p>
+        <p>Ordering kept direct, mobile-friendly, and easy to trust.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

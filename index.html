@@ -3,52 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Coffee | Premium Coffee Moments</title>
+    <meta name="description" content="Spring Coffee serves premium, carefully brewed coffee in a warm and inviting cafe atmosphere.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-... " crossorigin="anonymous" referrerpolicy="no-referrer" />   
-    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body>
-    <main>
-    <header>
-        <nav>
-            <div class="brand">
-               <span class="mug-icon"><i class="fa-solid fa-mug-hot"></i></span>
-               <h2 class="logo">Spring Coffee</h2>
+<body class="home-page">
+    <div class="site-shell">
+        <header class="site-header">
+            <div class="container">
+                <nav class="site-nav" aria-label="Primary navigation">
+                    <a class="brand" href="index.html">
+                        <span class="mug-icon"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></span>
+                        <span>
+                            <span class="logo">Spring Coffee</span>
+                            <span class="logo-tag">Slow mornings, bold brews</span>
+                        </span>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+                        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" data-page="index">Home</a></li>
+                        <li><a href="menu.html" data-page="menu">Menu</a></li>
+                        <li><a href="order.html" data-page="order">Order</a></li>
+                        <li><a href="about.html" data-page="about">About</a></li>
+                        <li><a href="contact.html" data-page="contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
+        </header>
 
-                
-            <div class="menu-toggle" id="menuToggle">☰</div>
+        <main>
+            <section class="hero">
+                <div class="container hero-layout">
+                    <div class="hero-copy reveal">
+                        <span class="eyebrow">Crafted Daily</span>
+                        <h1>Warm coffee, refined moments, and a cafe worth slowing down for.</h1>
+                        <p class="lead">Spring Coffee pairs carefully selected beans, precise brewing, and a calm neighborhood atmosphere to make every cup feel a little more special.</p>
+                        <div class="hero-actions">
+                            <a href="order.html" class="btn">Order Now</a>
+                            <a href="menu.html" class="btn-secondary">Explore Menu</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-card">
+                                <strong>Single-origin</strong>
+                                <span>Rotating beans with bright, balanced flavor.</span>
+                            </div>
+                            <div class="stat-card">
+                                <strong>Fresh daily</strong>
+                                <span>Dialed-in espresso and hand-finished milk texture.</span>
+                            </div>
+                            <div class="stat-card">
+                                <strong>8am - 9pm</strong>
+                                <span>Made for morning rituals and evening resets.</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="hero-visual reveal">
+                        <div class="hero-image-card">
+                            <img src="images/coffee.jpg" alt="A warm cup of coffee with a cozy cafe feel">
+                        </div>
+                        <div class="floating-note">
+                            <strong>Signature experience</strong>
+                            <p>Rich espresso, silky milk, and a premium finish designed for both quick takeaways and slow cafe moments.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-             <ul id="navMenu">
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="menu.html">Menu</a></li>
-                 <li><a href="order.html">Order</a></li>
-                 <li><a href="about.html">About Us</a></li>
-                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+            <section class="section">
+                <div class="container">
+                    <div class="section-intro reveal">
+                        <span class="eyebrow">Why Guests Return</span>
+                        <h2>Minimal, polished, and built around the cup.</h2>
+                        <p>Every part of the experience is designed to feel calm, premium, and easy to navigate, from the first glance to the final order.</p>
+                    </div>
+                    <div class="feature-grid">
+                        <article class="feature-card reveal">
+                            <i class="fa-solid fa-mug-saucer" aria-hidden="true"></i>
+                            <h3>Balanced menu choices</h3>
+                            <p>Best-selling espresso drinks, iced favorites, and smooth classics arranged for fast scanning and confident ordering.</p>
+                        </article>
+                        <article class="feature-card reveal">
+                            <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+                            <h3>Warm brand atmosphere</h3>
+                            <p>Rich browns, soft cream tones, and imagery that feels like an inviting neighborhood cafe rather than a generic template.</p>
+                        </article>
+                        <article class="feature-card reveal">
+                            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                            <h3>Clear paths to convert</h3>
+                            <p>Prominent call-to-action buttons, cleaner navigation, and fewer distractions make ordering or reaching out feel effortless.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-    </header>
+            <section class="section">
+                <div class="container split-panel">
+                    <div class="about-copy reveal">
+                        <span class="eyebrow">Featured Story</span>
+                        <h2>A neighborhood coffee bar with a premium point of view.</h2>
+                        <p class="lead">Spring Coffee exists for people who care about flavor, pace, and atmosphere. We take sourcing seriously, prepare every drink with intention, and keep the space welcoming for both quick stops and slower catch-ups.</p>
+                        <div class="hero-actions">
+                            <a href="about.html" class="btn-secondary">Read Our Story</a>
+                            <a href="contact.html" class="btn-secondary">Plan Your Visit</a>
+                        </div>
+                    </div>
+                    <div class="about-visual reveal">
+                        <img src="images/background.jpg" alt="A cozy cafe counter with warm coffee-shop lighting">
+                    </div>
+                </div>
+            </section>
 
-    <section class="hero page">
-       <div class="hero-content"> 
-        <div class="card-home">
-        <h1>COFFEE BUILDS YOUR MIND</h1>
-        <p>We brew premium coffee using carefully selected beans to give you
-      the perfect balance of flavor and aroma.</p>
-        <a href="menu.html" class="btn">Explore Our Menu</a>
-        </div>
-      </div>
-    </section>
-    </main>
-      <!-- MENU -->
- 
-  <footer>
-    <p>© 2025 Spring Coffee | Designed by Jerry</p>
-  </footer>
+            <section class="section">
+                <div class="container">
+                    <div class="cta-strip reveal">
+                        <div>
+                            <h3>Ready for your next cup?</h3>
+                            <p>Browse the menu, place a WhatsApp order, or stop by for a fresh pour.</p>
+                        </div>
+                        <a href="order.html" class="btn-secondary">Start an Order</a>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-<script src="script.js"></script>
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2025 Spring Coffee</p>
+                <p>Crafted for warm mornings and better coffee breaks.</p>
+            </div>
+        </footer>
+    </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
